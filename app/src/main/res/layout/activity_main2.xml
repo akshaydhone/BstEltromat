@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".Main2Activity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/i1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="81dp"
+        android:textStyle="bold"
+        android:textFontWeight="5dp"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:text="Welcome" />
+
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="288dp"
+        android:layout_height="63dp"
+        android:layout_centerInParent="true"
+        android:background="@layout/layout"
+        android:text="New Call Generation"
+        android:textColor="#ffffff"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="294dp"
+        android:layout_height="62dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="154dp"
+        android:background="@layout/blue"
+        android:text="Previous Call Generation"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="294dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="72dp"
+        android:background="@layout/pink"
+        android:text="Pending Call Report"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>
+
+
+</RelativeLayout>
