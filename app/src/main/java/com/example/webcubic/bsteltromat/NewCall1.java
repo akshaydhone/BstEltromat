@@ -3,56 +3,65 @@ package com.example.webcubic.bsteltromat;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.Toast;
 
-public class NewCallGen extends AppCompatActivity {
-    Button b1;
+public class NewCall1 extends AppCompatActivity {
     EditText e1,e2,e3,e4,e5;
+    Button b1;
+    Spinner s1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_new_call_gen);
+        setContentView(R.layout.activity_new_call1);
         e1=(EditText)findViewById(R.id.e1);
         e2=(EditText)findViewById(R.id.e2);
         e3=(EditText)findViewById(R.id.e3);
         e4=(EditText)findViewById(R.id.e4);
         e5=(EditText)findViewById(R.id.e5);
+        s1=(Spinner)findViewById(R.id.s1);
         b1=(Button)findViewById(R.id.b1);
-
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(e1.getText().toString().trim().length()==0)
                 {
-                    e1.setError("City not entered");
+                    e1.setError("Email not entered");
                     e1.requestFocus();
                 }
 
                 if(e2.getText().toString().trim().length()==0)
                 {
-                    e2.setError("Name not entered");
+                    e2.setError("Date not Generated");
                     e2.requestFocus();
                 }
 
 
                 if(e3.getText().toString().trim().length()==0)
                 {
-                    e3.setError("Client's Name not entered");
+                    e3.setError("IN time not entered");
                     e3.requestFocus();
                 }
-               if(e5.getText().toString().trim().length()==0)
+                if(s1.equals("Select a Product"))
                 {
-                    e5.setError("Contact not entered");
-                    e5.requestFocus();
+                    Toast.makeText(NewCall1.this, "Please select a product", Toast.LENGTH_SHORT).show();
                 }
 
-             if(e4.getText().toString().trim().length()==0)
+                /*if(e4.getText().toString().trim().length()==0)
                 {
-                    e4.setError("Address not entered");
+                    e4.setError("Product serial No. not entered");
                     e4.requestFocus();
+                }*/
+
+          if(e4.getText().toString().trim().equals(""))
+                {
+                     e4.setError("Product serial No. not entered");
+                   e4.requestFocus();
                 }
 
 
@@ -60,13 +69,10 @@ public class NewCallGen extends AppCompatActivity {
 
 
                 else{
-                    Intent i=new Intent(NewCallGen.this,NewCall1.class);
+                    Intent i=new Intent(NewCall1.this,NewCall2.class);
                     startActivity(i);
                 }
-
             }
         });
-
-
     }
 }

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#02A4FD"
-    tools:context=".NewCallGen">
+    tools:context=".NewCall2">
+
 
     <TextView
         android:id="@+id/t1"
@@ -13,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:text="Your Region:  Mumbai"
+        android:text="Nature of Complaint"
         android:textColor="#ffffff"
         android:textSize="23sp"
         android:textStyle="bold"
@@ -31,7 +32,7 @@
         android:background="@layout/shape"
         android:ems="10"
         android:gravity="center"
-        android:hint="    City of service"
+        android:hint="    Enter Nature of complaint"
         android:inputType="textPersonName"
         android:textSize="25dp" />
 
@@ -46,21 +47,21 @@
         android:background="@layout/shape"
         android:ems="10"
         android:gravity="center"
-        android:hint="    Name of Service engineer"
+        android:hint="    Specify complaint in detail"
         android:inputType="textPersonName"
         android:textSize="25dp" />
 
     <EditText
         android:id="@+id/e3"
         android:layout_width="370dp"
-        android:layout_height="56dp"
+        android:layout_height="90dp"
 
         android:layout_alignParentStart="true"
         android:layout_below="@+id/t3"
         android:background="@layout/shape"
         android:ems="10"
         android:gravity="center"
-        android:hint="    Clients Name"
+        android:hint="Enter the action taken in detail"
         android:inputType="textPersonName"
         android:textSize="25dp" />
 
@@ -72,7 +73,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="97dp"
-        android:text="Enter Your Name"
+        android:text="Details Of Complaint"
         android:textColor="#ffffff"
         android:textSize="23sp"
         android:textStyle="bold"
@@ -86,7 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/e2"
-        android:text="Enter Client's Name"
+        android:text="Engineer's Observation/ Action Taken/Feedback:"
         android:textColor="#ffffff"
         android:textSize="23sp"
         android:textStyle="bold"
@@ -94,20 +95,23 @@
         tools:layout_editor_absoluteY="16dp" />
 
 
-    <EditText
-        android:id="@+id/e4"
+    <Spinner
+        android:id="@+id/s1"
         android:layout_width="370dp"
         android:layout_height="69dp"
 
+        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/t4"
-        android:background="@layout/shape"
+        android:layout_marginBottom="123dp"
+        android:background="@android:drawable/btn_dropdown"
         android:drawablePadding="5dp"
         android:ems="10"
+
+        android:entries="@array/tag_arrays2"
         android:gravity="center"
-        android:hint="    Clients Address"
-        android:inputType="textPersonName"
-        android:textSize="25dp" />
+        android:prompt="@string/tag_prompt2"
+        />
+
 
     <TextView
         android:id="@+id/t4"
@@ -115,55 +119,46 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/e3"
-        android:text="Enter address:"
+        android:layout_marginTop="2dp"
+        android:text="Status Of the Complaint:"
         android:textColor="#ffffff"
         android:textSize="23sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="139dp"
         tools:layout_editor_absoluteY="16dp" />
 
-
-    <TextView
-        android:id="@+id/t5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/e4"
-        android:text="Enter Contact No:"
-        android:textColor="#ffffff"
-        android:textSize="23sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="16dp" />
-
-    <EditText
-        android:id="@+id/e5"
-        android:layout_width="370dp"
-        android:layout_height="56dp"
-
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/t5"
-        android:background="@layout/shape"
-        android:drawablePadding="5dp"
-        android:ems="10"
-        android:gravity="center"
-        android:hint="    Clients Contact No"
-        android:inputType="number"
-        android:textSize="25dp" />
 
     <Button
         android:id="@+id/b1"
-        android:layout_width="341dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
+        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/e5"
-        android:layout_marginStart="12dp"
+        android:layout_marginBottom="17dp"
         android:background="@layout/layout"
         android:text="Next"
         android:textColor="#ffffff"
         android:textSize="25sp"
         android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/e4"
+        android:layout_width="351dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/s1"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-123dp"
+        android:background="@layout/shape"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Specify status of complaint"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        android:textSize="25dp"
+
+        />
 
 
 </RelativeLayout>

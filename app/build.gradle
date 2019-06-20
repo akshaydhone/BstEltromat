@@ -17,6 +17,10 @@ android {
         }
     }
     sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/font'] } }
+    compileOptions {
+        //targetCompatibility X
+        //sourceCompatibility X
+    }
 }
 
 dependencies {

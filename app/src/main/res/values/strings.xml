@@ -1,3 +1,31 @@
 <resources>
-    <string name="app_name">BstEltromat</string>
+    <string name="app_name">BST eltromat</string>
+
+    <string name="tag_prompt1">Choose a Tag</string>
+
+    <string-array name="tag_arrays1">
+        <item>Select a Product</item>
+        <item>Printer</item>
+        <item>Xerox machine</item>
+        <item>CPU</item>
+        <item>Motherboard</item>
+
+
+    </string-array>
+
+
+    <string name="tag_prompt2">Choose a Tag</string>
+
+    <string-array name="tag_arrays2">
+        <item>Select</item>
+        <item>Completed</item>
+        <item>Needs to be visited again</item>
+        <item>Under-Repaired</item>
+        <item>Spare part Required</item>
+        <item>System sent to factory for repair</item>
+        <item>Other</item>
+
+
+
+    </string-array>
 </resources>
