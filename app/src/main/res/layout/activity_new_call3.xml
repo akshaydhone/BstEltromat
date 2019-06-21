@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#02A4FD"
+    tools:context=".NewCall3">
+
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Client's Remark"
+        android:textColor="#ffffff"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/e1"
+        android:layout_width="370dp"
+        android:layout_height="56dp"
+
+        android:layout_above="@+id/t2"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-95dp"
+        android:background="@layout/shape"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Client's Remark"
+        android:inputType="textPersonName"
+        android:textSize="25dp" />
+
+
+    <EditText
+        android:id="@+id/e2"
+        android:layout_width="370dp"
+        android:layout_height="119dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/t2"
+        android:background="@layout/shape"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Upload Client's Photo"
+        android:inputType="textPersonName"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/e3"
+        android:layout_width="370dp"
+        android:layout_height="49dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/t3"
+        android:background="@layout/shape"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Account No:123xxxxxx980"
+        android:inputType="textPersonName"
+        android:textSize="25dp" />
+
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="97dp"
+        android:text="Client's Photo"
+        android:textColor="#ffffff"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/e2"
+        android:text="Payment Option:"
+        android:textColor="#ffffff"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+
+    <Spinner
+        android:id="@+id/s1"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/e4"
+        android:layout_alignParentStart="true"
+        android:background="@android:drawable/btn_dropdown"
+
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:entries="@array/tag_arrays3"
+        android:gravity="center"
+        android:prompt="@string/tag_prompt3" />
+
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="11dp"
+        android:background="@layout/layout"
+        android:text="Submit"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="67dp"
+        android:background="@layout/layout"
+        android:text="Save Report"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/e4"
+        android:layout_width="370dp"
+        android:layout_height="46dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="127dp"
+        android:background="@layout/shape"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Others:Specify"
+        android:inputType="textPersonName"
+        android:textSize="25dp" />
+
+
+</RelativeLayout>

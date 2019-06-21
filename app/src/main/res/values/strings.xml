@@ -26,6 +26,20 @@
         <item>Other</item>
 
 
+    </string-array>
+
+
+
+    <string name="tag_prompt3">Choose a Tag</string>
+
+    <string-array name="tag_arrays3">
+        <item>Select</item>
+        <item>Cash Payment</item>
+        <item>Cheque Payment</item>
+        <item>Bank Transfer:NEFT,RTGS,IMPS</item>
+
+        <item>Other/FOC Specify</item>
+
 
     </string-array>
 </resources>

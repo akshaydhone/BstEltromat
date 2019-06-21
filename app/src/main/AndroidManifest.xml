@@ -10,7 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
-        <activity android:name=".Main2Activity" />
+        <activity
+            android:name=".Main2Activity"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,9 +20,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NewCallGen" />
-        <activity android:name=".NewCall1" />
-        <activity android:name=".NewCall2"></activity>
+        <activity
+            android:name=".NewCallGen"
+            android:parentActivityName=".Main2Activity" />
+        <activity
+            android:name=".NewCall1"
+            android:parentActivityName=".NewCallGen" />
+        <activity
+            android:name=".NewCall2"
+            android:parentActivityName=".NewCall1" />
+        <activity android:name=".NewCall3" android:parentActivityName=".NewCall2"></activity>
     </application>
 
 </manifest>

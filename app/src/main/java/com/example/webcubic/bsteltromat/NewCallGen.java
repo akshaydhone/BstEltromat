@@ -15,6 +15,8 @@ public class NewCallGen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_call_gen);
+        getSupportActionBar().setTitle("New  Call");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         e1=(EditText)findViewById(R.id.e1);
         e2=(EditText)findViewById(R.id.e2);
         e3=(EditText)findViewById(R.id.e3);
@@ -31,25 +33,25 @@ public class NewCallGen extends AppCompatActivity {
                     e1.requestFocus();
                 }
 
-                if(e2.getText().toString().trim().length()==0)
+                else if(e2.getText().toString().trim().length()==0)
                 {
                     e2.setError("Name not entered");
                     e2.requestFocus();
                 }
 
 
-                if(e3.getText().toString().trim().length()==0)
+                else if(e3.getText().toString().trim().length()==0)
                 {
                     e3.setError("Client's Name not entered");
                     e3.requestFocus();
                 }
-               if(e5.getText().toString().trim().length()==0)
+               else if(e5.getText().toString().trim().length()==0)
                 {
                     e5.setError("Contact not entered");
                     e5.requestFocus();
                 }
 
-             if(e4.getText().toString().trim().length()==0)
+            else if(e4.getText().toString().trim().length()==0)
                 {
                     e4.setError("Address not entered");
                     e4.requestFocus();

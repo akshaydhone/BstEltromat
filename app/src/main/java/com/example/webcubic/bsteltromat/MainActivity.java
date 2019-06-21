@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                     e1.requestFocus();
                 }
 
-                if(e2.getText().toString().trim().length()==0)
+                else if(e2.getText().toString().trim().length()==0)
                 {
                     e2.setError("Password not entered");
                     e2.requestFocus();
